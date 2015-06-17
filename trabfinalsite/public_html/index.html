@@ -10,7 +10,198 @@ and open the template in the editor.
         <meta charset="UTF-8"> 
         <style type='text/css'>
 
-          
+
+
+
+
+            //estilos de slides
+            @import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+            html, body { background: #333 url("http://codepen.io/images/classy_fabric.png"); }
+
+            .slides {
+                padding: 0;
+                width: 600px;
+                height: 450px;
+                display: block;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            .slides * {
+                user-select: none;
+                -ms-user-select: none;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                -webkit-touch-callout: none;
+            }
+
+            .slides input { display: none; }
+
+            .slide-container { display: block; }
+
+            .slide {
+                top: 0;
+                opacity: 0;
+                width: 609px;
+                height: 420px;
+                display: block;
+                position: absolute;
+
+                transform: scale(0);
+
+                transition: all .7s ease-in-out;
+            }
+
+            .slide img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .nav label {
+                width: 200px;
+                height: 100%;
+                display: none;
+                position: absolute;
+
+                opacity: 0;
+                z-index: 9;
+                cursor: pointer;
+
+                transition: opacity .2s;
+
+                color: #FFF;
+                font-size: 156pt;
+                text-align: center;
+                line-height: 380px;
+                font-family: "Varela Round", sans-serif;
+                background-color: rgba(255, 255, 255, .3);
+                text-shadow: 0px 0px 15px rgb(119, 119, 119);
+            }
+
+            .slide:hover + .nav label { opacity: 0.5; }
+
+            .nav label:hover { opacity: 1; }
+
+            .nav .next { right: 0; }
+
+            input:checked + .slide-container  .slide {
+                opacity: 1;
+
+                transform: scale(1);
+
+                transition: opacity 1s ease-in-out;
+            }
+
+            input:checked + .slide-container .nav label { display: block; }
+
+            .nav-dots {
+                width: 100%;
+                bottom: 9px;
+                height: 11px;
+                display: block;
+                position: absolute;
+                text-align: center;
+            }
+
+            .nav-dots .nav-dot {
+                top: -5px;
+                width: 11px;
+                height: 11px;
+                margin: 0 4px;
+                position: relative;
+                border-radius: 100%;
+                display: inline-block;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+
+            .nav-dots .nav-dot:hover {
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            input#img-1:checked ~ .nav-dots label#img-dot-1,
+            input#img-2:checked ~ .nav-dots label#img-dot-2,
+            input#img-3:checked ~ .nav-dots label#img-dot-3,
+            input#img-4:checked ~ .nav-dots label#img-dot-4,
+            input#img-5:checked ~ .nav-dots label#img-dot-5,
+            input#img-6:checked ~ .nav-dots label#img-dot-6 {
+                background: rgba(0, 0, 0, 0.8);
+            }
+
+            //final estilos slides
+            
+            .divisao{
+                
+                background-color: #000000;
+            }
+            
+            .content2{
+                float: left;
+                width: 100%;
+                background-color: transparent;
+            }
+
+            //estilos do menu
+            *{margin: 0; padding: 0;}
+
+            body{
+                font-family: arial, helvetica, sans-serif;
+                font-size: 20px;
+            }
+
+            .menu{
+                list-style:none;
+                border:1px solid #c0c0c0;
+                float:left;
+            }
+
+
+            .menu li{
+                position:relative;
+                float:left;
+                border-right:5px solid #c0c0c0;
+            }
+
+
+            .menu li a{color:#333; text-decoration:none; padding:20px 20px; display:block;}
+
+            .menu li a:hover{
+                background:#333;
+                color:#fff;
+                -moz-box-shadow:0 3px 10px 0 #CCC;
+                -webkit-box-shadow:0 3px 10px 0 #ccc;
+                text-shadow:0px 0px 5px #fff;
+            }
+
+
+            .menu li  ul{
+                position:absolute;
+                top:50px;
+                left:0;
+                background-color:#fff;
+                display:none;
+            }  
+
+
+            .menu li:hover ul, .menu li.over ul{display:block;}
+
+            .menu li ul li{
+                border:1px solid #c0c0c0;
+                display:block;
+                width:150px;
+            }
+
+            //final estilos do menu
+
+
+            .content{
+                float: left;
+                width: 100%;
+                background-color: #99ccff
+            }
+
             .mask{
                 position: relative;
                 overflow: hidden;
@@ -18,6 +209,14 @@ and open the template in the editor.
                 width: 72%;
                 background-color: #f4f4f4
             }
+
+            .col3{
+                float: left;
+                width: 100%;
+                background-color: #000000
+
+            }
+
             .header{
 
                 float: left;
@@ -57,12 +256,13 @@ and open the template in the editor.
                 width: 100%;
                 background-color: black;
                 color: aliceblue;
+                text-align: center;
             }
             body {
                 padding: 0px;
                 margin: 0px;
                 font-size: 90%;
-                background-color: #e7e7de
+                background-color: #000
             }
         </style>
 
@@ -76,157 +276,105 @@ and open the template in the editor.
 
 
     <body>
-        
-        
-        
-  
-          
-	
-            
-       
+
+
+
+
+
+
+
+
 
         <div class="mask">
             <div class="header">
                 Master Wrestling Brazil
             </div>
 
-            <div class="content">
+            <div class="divisao">
+                <div class="divisao">
+                    
+                </div>
 
-                <div id='main-wrapper'>
 
-                    <!-- Featured Content Slider Started -->
 
-                    <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-                        <b:if cond='data:blog.pageType != &quot;item&quot;'>
+                <div class="content2">
+                <ul class="slides">
+                    <input type="radio" name="radio-btn" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-6" class="prev">&#x2039;</label>
+                            <label for="img-2" class="next">&#x203a;</label>
+                        </div>
+                    </li>
 
-                            <div class='fp-slider clearfix'>
-                                <div class='fp-slides-container clearfix'>
+                    <input type="radio" name="radio-btn" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-1" class="prev">&#x2039;</label>
+                            <label for="img-3" class="next">&#x203a;</label>
+                        </div>
+                    </li>
 
-                                    <div class='fp-slides'>
+                    <input type="radio" name="radio-btn" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-2" class="prev">&#x2039;</label>
+                            <label for="img-4" class="next">&#x203a;</label>
+                        </div>
+                    </li>
 
-                                        <!-- Slide 1 Code Start -->
-                                        <div class='fp-slides-items'>
-                                            <div class='fp-thumbnail'>
-                                                <a href='#'><img src='http://data1.ibtimes.co.in/en/full/550916/john-cena-defeats-seth-rollins-take-brock-lesnar-royal-rumble.jpg'/></a>
-                                            </div>
-                                            <div class='fp-content-wrap'>
-                                                <div class='fp-content'>
-                                                    <h3 class='fp-title'>
-                                                        <a href='#'>AGORA É CENA VS LESNAR!</a>
-                                                    </h3>
-                                                    <p>
-                                                        Cena vence mais uma vez no TLC e pode recuperar o título frente a Lesnar no Royal Rumble
-                                                    </p>
-                                                </div>
-                                                <div class='fp-prev-next-wrap clearfix'>
-                                                    <a class='fp-next' href='#fp-next'/>
-                                                    <a class='fp-prev' href='#fp-prev'/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Slide 1 Code End -->
+                    <input type="radio" name="radio-btn" id="img-4" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-3" class="prev">&#x2039;</label>
+                            <label for="img-5" class="next">&#x203a;</label>
+                        </div>
+                    </li>
 
-                                        <!-- Slide 2 Code Start -->
-                                        <div class='fp-slides-items'>
-                                            <div class='fp-thumbnail'>
-                                                <a href='#'><img src='http://3.bp.blogspot.com/-Fz0mi08ISv0/UucecK5bugI/AAAAAAAAJcw/wp69kVrgx5k/s1600/WWE-Royal-Rumble-Logo-Wallpaper.png'/></a>
-                                            </div>
-                                            <div class='fp-content-wrap'>
-                                                <div class='fp-content'>
-                                                    <h3 class='fp-title'>
-                                                        <a href='#'>AGORA É ROYAL RUMBLE</a>
-                                                    </h3>
-                                                    <p>
-                                                        QUE VENHA 25 DE JANEIRO! 
-                                                    </p>
-                                                </div>
-                                                <div class='fp-prev-next-wrap clearfix'>
-                                                    <a class='fp-next' href='#fp-next'/>
-                                                    <a class='fp-prev' href='#fp-prev'/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Slide 2 Code End -->
+                    <input type="radio" name="radio-btn" id="img-5" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-4" class="prev">&#x2039;</label>
+                            <label for="img-6" class="next">&#x203a;</label>
+                        </div>
+                    </li>
 
-                                        <!-- Slide 3 Code Start -->
-                                        <div class='fp-slides-items'>
-                                            <div class='fp-thumbnail'>
-                                                <a href='#'><img src='http://www.wwe.com/f/wysiwyg/image/2014/10/20141031_WM31_TicketSale_LIGHT_HP.jpg'/></a>
-                                            </div>
-                                            <div class='fp-content-wrap'>
-                                                <div class='fp-content'>
-                                                    <h3 class='fp-title'>
-                                                        <a href='#'>Wrestlemania 31</a>
-                                                    </h3>
-                                                    <p>
-                                                        Go to Blogger edit html and find these sentences.Now replace these sentences with your own descriptions. 
-                                                    </p>
-                                                </div>
-                                                <div class='fp-prev-next-wrap clearfix'>
-                                                    <a class='fp-next' href='#fp-next'/>
-                                                    <a class='fp-prev' href='#fp-prev'/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Slide 3 Code End -->
+                    <input type="radio" name="radio-btn" id="img-6" />
+                    <li class="slide-container">
+                        <div class="slide">
+                            <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
+                        </div>
+                        <div class="nav">
+                            <label for="img-5" class="prev">&#x2039;</label>
+                            <label for="img-1" class="next">&#x203a;</label>
+                        </div>
+                    </li>
 
-                                        <!-- Slide 4 Code Start -->
-                                        <div class='fp-slides-items'>
-                                            <div class='fp-thumbnail'>
-                                                <a href='#'><img src='http://1.bp.blogspot.com/-0Rxe4pXoE6g/USADiHwakfI/AAAAAAAADKo/maVgIz4EE7k/s000/44.jpg'/></a>
-                                            </div>
-                                            <div class='fp-content-wrap'>
-                                                <div class='fp-content'>
-                                                    <h3 class='fp-title'>
-                                                        <a href='#'>This is default featured slide 4 title</a>
-                                                    </h3>
-                                                    <p>
-                                                        Go to Blogger edit html and find these sentences.Now replace these sentences with your own descriptions. 
-                                                    </p>
-                                                </div>
-                                                <div class='fp-prev-next-wrap clearfix'>
-                                                    <a class='fp-next' href='#fp-next'/>
-                                                    <a class='fp-prev' href='#fp-prev'/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Slide 4 Code End -->
-
-                                        <!-- Slide 5 Code Start -->
-                                        <div class='fp-slides-items'>
-                                            <div class='fp-thumbnail'>
-                                                <a href='#'><img src='http://3.bp.blogspot.com/-vFadX-DA6zo/USADihbNsPI/AAAAAAAADKw/h2KcxYUbxCc/s000/5.jpg'/></a>
-                                            </div>
-                                            <div class='fp-content-wrap'>
-                                                <div class='fp-content'>
-                                                    <h3 class='fp-title'>
-                                                        <a href='#'>This is default featured slide 5 title</a>
-                                                    </h3>
-                                                    <p>
-                                                        Go to Blogger edit html and find these sentences.Now replace these sentences with your own descriptions. 
-                                                    </p>
-                                                </div>
-                                                <div class='fp-prev-next-wrap clearfix'>
-                                                    <a class='fp-next' href='#fp-next'/>
-                                                    <a class='fp-prev' href='#fp-prev'/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Slide 5 Code End -->
-
-                                    </div>
-
-                                    <div class='fp-nav'>
-                                        <span class='fp-pager'/>
-                                    </div>  
-
-                                </div>
-                            </div>
-                            <div style='clear:both;'/>
-
-                        </b:if></b:if>
-
-                    <!-- Featured Content Slider End -->
+                    <li class="nav-dots">
+                        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                        <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                        <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                        <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+                    </li>
+                </ul>
+                </div>
 
 
 
@@ -236,40 +384,23 @@ and open the template in the editor.
 
 
 
+                <div class="content">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">O que fazemos?</a>
+                                <ul>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">Design</a></li>                   
+                                </ul>
+                            </li>
+                            <li><a href="#">Links</a></li>
+                            <li><a href="#">Contato</a></li>               
+                        </ul>
+                    </nav>
 
 
 
@@ -277,34 +408,65 @@ and open the template in the editor.
 
 
                 </div>
+
+
+
+                <div class="col3">
+                    rhytrhtrhth
+
+                </div>
+
+
+
+
                 <div class="colleft">
                     <div class="col1">
-                        Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a percepção das dificuldades aponta para a melhoria dos índices pretendidos. Por outro lado, o novo modelo estrutural aqui preconizado garante a contribuição de um grupo importante na determinação dos relacionamentos verticais entre as hierarquias. No entanto, não podemos esquecer que a contínua expansão de nossa atividade possibilita uma melhor visão global do processo de comunicação como um todo. 
+                        <form action="form_dados.php" method="get">
+                            <h1>Cadastro de dados</h1>
+                            <p>Nome:<br>
+                                <input type="text" name="nome">
+                            </p>
+                            <p>Senha:<br>
+                                <input type="password" name="senha">
+                            </p>
+                            <p>Sexo:<br>
+                                <input type="radio" name="sexo" value="masculino" checked="checked">Masculino
+                                <input type="radio" name="sexo" value="feminino">Feminino
+                            </p>
 
-                        É importante questionar o quanto a competitividade nas transações comerciais facilita a criação dos procedimentos normalmente adotados. A nível organizacional, a complexidade dos estudos efetuados assume importantes posições no estabelecimento do sistema de formação de quadros que corresponde às necessidades. Neste sentido, o início da atividade geral de formação de atitudes auxilia a preparação e a composição do fluxo de informações. 
 
-                        Desta maneira, a crescente influência da mídia estimula a padronização do investimento em reciclagem técnica. Assim mesmo, a expansão dos mercados mundiais acarreta um processo de reformulação e modernização das posturas dos órgãos dirigentes com relação às suas atribuições. Acima de tudo, é fundamental ressaltar que o entendimento das metas propostas oferece uma interessante oportunidade para verificação das diretrizes de desenvolvimento para o futuro. 
 
-                        O incentivo ao avanço tecnológico, assim como a determinação clara de objetivos maximiza as possibilidades por conta do remanejamento dos quadros funcionais. Não obstante, o julgamento imparcial das eventualidades pode nos levar a considerar a reestruturação dos paradigmas corporativos. A prática cotidiana prova que o desafiador cenário globalizado representa uma abertura para a melhoria das condições financeiras e administrativas exigidas. Gostaria de enfatizar que o fenômeno da Internet ainda não demonstrou convincentemente que vai participar na mudança das direções preferenciais no sentido do progresso. Evidentemente, a hegemonia do ambiente político talvez venha a ressaltar a relatividade dos métodos utilizados na avaliação de resultados. 
+                            <p>
+                                <input type="submit" value="Enviar">
+                            </p>
+                        </form>
 
-                        As experiências acumuladas demonstram que a constante divulgação das informações prepara-nos para enfrentar situações atípicas decorrentes do sistema de participação geral. Todavia, o aumento do diálogo entre os diferentes setores produtivos nos obriga à análise de todos os recursos funcionais envolvidos. Pensando mais a longo prazo, a consolidação das estruturas não pode mais se dissociar dos conhecimentos estratégicos para atingir a excelência. Do mesmo modo, a necessidade de renovação processual faz parte de um processo de gerenciamento das condições inegavelmente apropriadas. 
+
+
+
+
                     </div>
                     <div class="col2">
-                        Ainda assim, existem dúvidas a respeito de como a estrutura atual da organização causa impacto indireto na reavaliação de alternativas às soluções ortodoxas. Percebemos, cada vez mais, que a execução dos pontos do programa promove a alavancagem dos modos de operação convencionais. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a revolução dos costumes agrega valor ao estabelecimento da gestão inovadora da qual fazemos parte. O empenho em analisar a consulta aos diversos militantes exige a precisão e a definição do retorno esperado a longo prazo. O que temos que ter sempre em mente é que o comprometimento entre as equipes apresenta tendências no sentido de aprovar a manutenção dos níveis de motivação departamental. 
 
-                        Caros amigos, o desenvolvimento contínuo de distintas formas de atuação desafia a capacidade de equalização das diversas correntes de pensamento. Por conseguinte, a mobilidade dos capitais internacionais obstaculiza a apreciação da importância do impacto na agilidade decisória. É claro que a valorização de fatores subjetivos é uma das consequências das regras de conduta normativas. O cuidado em identificar pontos críticos na adoção de políticas descentralizadoras afeta positivamente a correta previsão do levantamento das variáveis envolvidas. No mundo atual, o surgimento do comércio virtual estende o alcance e a importância do orçamento setorial. 
+                        bfhdhfdddddddddddddddddddddddddnnnnbb
 
-                        Podemos já vislumbrar o modo pelo qual o consenso sobre a necessidade de qualificação deve passar por modificações independentemente das novas proposições. A certificação de metodologias que nos auxiliam a lidar com o acompanhamento das preferências de consumo cumpre um papel essencial na formulação das formas de ação. Do mesmo modo, a percepção das dificuldades possibilita uma melhor visão global dos índices pretendidos. O incentivo ao avanço tecnológico, assim como o desenvolvimento contínuo de distintas formas de atuação garante a contribuição de um grupo importante na determinação dos relacionamentos verticais entre as hierarquias. 
 
-                        No entanto, não podemos esquecer que a revolução dos costumes assume importantes posições no estabelecimento dos níveis de motivação departamental. Podemos já vislumbrar o modo pelo qual a valorização de fatores subjetivos acarreta um processo de reformulação e modernização das formas de ação. Por conseguinte, a complexidade dos estudos efetuados aponta para a melhoria das condições inegavelmente apropriadas. Não obstante, o início da atividade geral de formação de atitudes faz parte de um processo de gerenciamento do fluxo de informações. 
 
-                        Neste sentido, a crescente influência da mídia afeta positivamente a correta previsão do sistema de formação de quadros que corresponde às necessidades. Pensando mais a longo prazo, o desafiador cenário globalizado talvez venha a ressaltar a relatividade de todos os recursos funcionais envolvidos. O que temos que ter sempre em mente é que a consulta aos diversos militantes oferece uma interessante oportunidade para verificação das condições financeiras e administrativas exigidas. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a expansão dos mercados mundiais maximiza as possibilidades por conta do investimento em reciclagem técnica. Acima de tudo, é fundamental ressaltar que a consolidação das estruturas promove a alavancagem do impacto na agilidade decisória. 
 
-                        Caros amigos, o acompanhamento das preferências de consumo representa uma abertura para a melhoria do orçamento setorial. Gostaria de enfatizar que a determinação clara de objetivos auxilia a preparação e a composição das direções preferenciais no sentido do progresso. O empenho em analisar a hegemonia do ambiente político ainda não demonstrou convincentemente que vai participar na mudança do sistema de participação geral. As experiências acumuladas demonstram que o fenômeno da Internet causa impacto indireto na reavaliação das posturas dos órgãos dirigentes com relação às suas atribuições. Assim mesmo, a mobilidade dos capitais internacionais estimula a padronização do remanejamento dos quadros funcionais. 
+
+
+
+
+
+
+
+
+
+
                     </div> 
                 </div> 
                 <div class="footer">
-                    procedimentos normalmente adotados. A nível organizacional, a complexidade dos estudos efetuados assume importantes posições no estabelecimento do sistema de formação de quadros que corresponde às necessidades. Neste sentido, o início da atividade geral de formação de atitudes auxilia a preparação e a composição do fluxo de informações. Desta maneira, a crescente influência da mídia estimula a padronização do investimento em reciclagem técnica. Assim mesmo, a expansão dos mercados mundiais acarreta um processo de reformulação e modernização das posturas dos órgãos dirigentes com relação às suas atribuições. Acima de tudo, é fundamental ressaltar que o entendimento das metas propostas oferece uma interessante oportunidade para verificação das diretrizes de desenvolvimento para o futuro. O incentivo ao avanço tecnológico, assim como a determinação clara de objetivos maximiza as possibilidades por conta do remanejamento dos quadros funcionais. Não obstante, o julgamento imparcial das eventualidades pode nos levar a considerar a reestruturação dos paradigmas corporativos. A prática cotidiana prova que o desafiador cenário globalizado representa uma abertura para a melhoria das condi
+                    Todos os direitos reservados aos Programadores SENAC-RS
                 </div>
             </div>
 
