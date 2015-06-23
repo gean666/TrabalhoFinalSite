@@ -217,7 +217,7 @@ body{
 .content{
     float: left;
     width: 100%;
-    background-color: #99ccff
+    background-color: #FFF
 }
 
 .mask{
@@ -225,13 +225,13 @@ body{
     overflow: hidden;
     margin: 0px auto;
     width: 72%;
-    background-color: #f4f4f4
+    background-color: #FFF
 }
 
 .col3{
     float: left;
     width: 100%;
-    background-color: #000000
+    background-color: red
 
 }
 
@@ -243,6 +243,7 @@ body{
     font-size: 50px;
     color: #FFF;
     text-align : center;
+    
 
 
 
@@ -251,7 +252,7 @@ body{
     position: relative;
     width: 100%;
     right: 34%;
-    background-color: #f4f4f4
+    background-color: #FFF
 }
 .col1{
     position: relative;
@@ -259,7 +260,7 @@ body{
     float: left;
     width: 32%;
     left: 101%;
-    background-color: #e6e6e6
+    background-color: #FFF
 }
 .col2{
     position: relative;
@@ -267,7 +268,7 @@ body{
     float: left;
     width: 64%;
     left: 3%;
-    background-color: #e6e6e6
+    background-color: #FFF
 }
 .footer{
     float: left;
@@ -292,6 +293,16 @@ body {
 
 }
 
+.mensagem{
+    text-align: center;
+    
+    
+}
 
-
-
+.header a:hover{
+    
+    color: red;
+    
+    
+    
+}
