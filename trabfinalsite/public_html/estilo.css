@@ -15,7 +15,7 @@ and open the template in the editor.
 
 .MBD2B-social{
     width:285px;
-    
+
 }
 .MBD2B-social li{position:relative;cursor:pointer;padding:0;list-style:none}
 .MBD2B-social .fb,.tw,.gp,.fd{z-index:7;float:left;margin:1px;position:relative;display:block}
@@ -247,7 +247,7 @@ body{
     font-size: 50px;
     color: #FFF;
     text-align : center;
-    
+
 
 
 
@@ -300,14 +300,38 @@ body {
 
 .mensagem{
     text-align: center;
+
+
+}
+
+a:hover{
+    color: red;
+
+
+}
+
+.contato{
+    text-align: center;
+    color: #ff0000;
     
     
 }
 
-.header a:hover{
-    
-    color: red;
-    
+.emails{
+    text-align: center;
+    font-size: 30px;
     
     
 }
+
+
+A:link {
+    text-decoration:none;
+    color:#FFF;} 
+A:visited {
+    text-decoration:none;
+    color:#ff0000} 
+A:active {text-decoration:none;
+        color:#ff0000;} 
+A:hover {text-decoration:underline;
+       color:green } 
