@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="stylesheet" type="text/css" href="estilo.css">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -33,30 +34,7 @@ and open the template in the editor.
             <div  class="header">
                 <a  href='#' >Master Wrestling Brazil</a>
 
-                <script LANGUAGE="JAVASCRIPT">
-                    <!--
-                    estado = 0
-                    function pisca() {
-                        if (estado == 0) {
-                            document.fgColor = "red"
-                            estado = 1
-                        } else {
-                            if (estado == 1) {
-                                document.fgColor = "black"
-                                estado = 2
-                            } else {
-                                document.fgColor = "red"
-                                estado = 0
-                            }
-                        }
-                        setTimeout("pisca()", 700)
-                    }
-
-                    //-->
-
-                    window.onload = pisca();
-
-                </script>
+                
 
             </div>
 
@@ -222,48 +200,38 @@ and open the template in the editor.
 
 
 
-
+                        <br>
 
 
                         <!-- area de login de usuario -->
-                        <form action="form_dados.php" method="get">
-                            <h1>Login</h1>
-                            <p>E-mail<br>
-                                <input type="text" name="nome">
-                            </p>
-                            <p>Senha:<br>
-                                <input type="password" name="senha">
-                            </p>
-                            <p>
-                                <input type="submit" value="Logar">
-                            </p>
+
+                        <form method="POST" action="login.php">
+                            <label>Login:</label><input type="text" name="login" id="login"><br>
+                            <br>
+                            <label>Senha:</label><input type="password" name="senha" id="senha"><br>
+                            <input type="submit" value="entrar" id="entrar" name="entrar"><br>
+                            <a href="cadastro.html">Cadastre-se</a>
                         </form>
+
+
+
+                        <br>
 
                         <!-- area de cadastro de usuario-->
-                        <form action="form_dados.php" method="get">
-                            <h3>
-                                Cadastre-se agora!
-                            </h3>
-                            <p>Nome:<br>
-                                <input type="text" name="nome">
-                            </p>
-                            <p>Senha:<br>
-                                <input type="password" name="senha">
-                            </p>
-                            <p>E-mail<br>
-                                <input type="email" name="e-mail">
-                            </p>
-                            <p>Sexo:<br>
-                                <input type="radio" name="sexo" value="masculino" checked="checked">Masculino
-                                <input type="radio" name="sexo" value="feminino">Feminino
-                            </p>
 
 
 
-                            <p>
-                                <input type="submit" value="Enviar">
-                            </p>
+                        <form method="POST" action="cadastro.php">
+                            <label>Login:</label><input type="text" name="login" id="login"><br>
+                            <br>
+                            <label>Senha:</label><input type="password" name="senha" id="senha"><br>
+                            <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
                         </form>
+
+
+
+
+                        
 
 
                         <!-- gadget metro -->
