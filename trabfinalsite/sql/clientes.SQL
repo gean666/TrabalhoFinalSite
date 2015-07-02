@@ -1,15 +1,17 @@
-create database cadastro;
+CREATE DATABASE `cadastro`
+    CHARACTER SET 'utf8'
+    COLLATE 'utf8_general_ci';
 
 
 
 CREATE TABLE `usuarios` (
-`nome` VARCHAR( 60 ) NOT NULL ,
-`email` VARCHAR( 60 ) NOT NULL ,
-`login` VARCHAR( 12 ) NOT NULL ,
-`senha` VARCHAR( 12 ) NOT NULL ,
-`id` INT( 200 ) AUTO_INCREMENT 
-
-
-);
+  `id`       INTEGER(11)  NOT NULL AUTO_INCREMENT,
+  `email`    VARCHAR(100) NOT NULL UNIQUE,
+  `senha` VARCHAR(40)  NOT NULL,
+  `login`  varchar(40),
+  PRIMARY KEY (`id`)
+    COMMENT ''
+)
+  
 
 

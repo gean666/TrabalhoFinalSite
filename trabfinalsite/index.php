@@ -1,23 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
-        <title>Noticias TNA</title>
+        <title>Master Wrestling Brazil</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="stylesheet" type="text/css" href="estilo.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
+        <?php
+        $login_cookie = $_COOKIE['login'];
+        if (isset($login_cookie)) {
+            echo"Bem-Vindo, $login_cookie <br>";
+            
+        } else {
+            echo"<center><font color='red'>Bem-Vindo, convidado</font><center><br>";
+            
+            echo"<br><a href='index.php'><font color='red'>Faça Login para ter acesso total</font></a>";
+        }
+        ?>
     </head>
+
+
+
+
+
+
     <body>
+
         
+
+
+
+
+
+
+
+
+        <!-- cabecalho com titulo da pagina -->
+
         <div class="mask">
-            <div class="header">
-                Master Wrestling Brazil
+            <div  class="header">
+                <a  href='#' >Master Wrestling Brazil</a>
+
+
+
             </div>
 
             <div class="divisao">
                 <div class="divisao">
 
                 </div>
+
+
 
                 <!-- slider com imagens -->
 
@@ -112,7 +153,7 @@
 
                     <nav>
                         <ul class="menu">
-                            <li><a href=index.html>Inicio</a></li>
+                            <li><a href="index.php">Inicio</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="#">Noticias</a>
                                 <ul>
@@ -123,8 +164,8 @@
                                 </ul>
                             </li>
 
-                            <li><a href="shows.html">Shows e PPV'S</a>
-                                
+                            <li><a href="shows.html">Shows e PPV's</a>
+
                             <li><a href="#">Shows TNA</a>
                                 <ul>
                                     <li><a href="#">IMPACT WRESTLING</a></li>
@@ -134,7 +175,7 @@
 
                             <li><a href="contato.html">Contato</a></li> 
                             <li><a href="artigos.html">Loja MWB</a></li> 
-                            <li><a href="#">Divas</a></li> 
+                            
 
 
                         </ul>
@@ -150,7 +191,7 @@
 
 
                 <div class="col3">
-                    
+
                     <br>
 
                 </div>
@@ -174,48 +215,40 @@
 
 
 
-
+                        <br>
 
 
                         <!-- area de login de usuario -->
-                        <form action="form_dados.php" method="get">
-                            <h1>Login</h1>
-                            <p>E-mail<br>
-                                <input type="text" name="nome">
-                            </p>
-                            <p>Senha:<br>
-                                <input type="password" name="senha">
-                            </p>
-                            <p>
-                                <input type="submit" value="Logar">
-                            </p>
+
+                        <form method="POST" action="login.php">
+                            <label>Login:</label><input type="text" name="login" id="login"><br>
+                            <br>
+                            <label>Senha:</label><input type="password" name="senha" id="senha"><br>
+                            <input type="submit" value="entrar" id="entrar" name="entrar">
+                            <br>
+                            <a href="cadastro.html">Cadastre-se</a>
                         </form>
+
+
+
+                        <br>
 
                         <!-- area de cadastro de usuario-->
-                        <form action="form_dados.php" method="get">
-                            <h3>
-                                Cadastre-se agora!
-                            </h3>
-                            <p>Nome:<br>
-                                <input type="text" name="nome">
-                            </p>
-                            <p>Senha:<br>
-                                <input type="password" name="senha">
-                            </p>
-                            <p>E-mail<br>
-                                <input type="email" name="e-mail">
-                            </p>
-                            <p>Sexo:<br>
-                                <input type="radio" name="sexo" value="masculino" checked="checked">Masculino
-                                <input type="radio" name="sexo" value="feminino">Feminino
-                            </p>
 
 
 
-                            <p>
-                                <input type="submit" value="Enviar">
-                            </p>
+                        <form method="POST" action="cadastro.php">
+                            <label>Login:</label><input type="text" name="login" id="login"><br>
+                            <br>
+                            <label>Senha:</label><input type="password" name="senha" id="senha">
+                            <br>
+                            <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
                         </form>
+
+
+
+
+
 
 
                         <!-- gadget metro -->
@@ -227,26 +260,92 @@
                             <li><a class="gp" href="URL_Google+" target="_blank"></a></li>
                             <li><a class="fd" href="URL_Feedberner" target="_blank"></a></li>
                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
 
+                    <!-- folha central da pagina -->
 
                     <div class="col2">
-                        testeufgeuihfuehfjijeiojioioioioioioioioioioioioioioiojefio
 
-                    </div>
 
-                    <div class="footer">
-                        Todos os direitos reservados aos Programadores SENAC-RS
-                    </div>
+                        <h1 class="mensagem">Site em construção</h1>
+                        <div align="center"><img src="D:\TrabalhoFinalSite\trabfinalsite\img\bemvindo.jpg"></div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div> 
+                </div> 
+
+                <!-- rodape da pagina -->
+
+                <div class="footer">
+                    Todos os direitos reservados aos Programadores SENAC-RS
                 </div>
+            </div>
 
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>
-
 
 
 
