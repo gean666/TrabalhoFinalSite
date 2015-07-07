@@ -10,7 +10,7 @@ CREATE TABLE `usuarios` (
   `senha` VARCHAR(40)  NOT NULL,
   `login`  varchar(40),
   PRIMARY KEY (`id`)
-    COMMENT ''
+   
 )
   
 

@@ -19,7 +19,8 @@ and open the template in the editor.
         if (isset($login_cookie)) {
             echo"Bem-Vindo, $login_cookie <br>";
             
-        } else {
+        } 
+        else {
             echo"<center><font color='red'>Bem-Vindo, convidado</font><center><br>";
             
             echo"<br><a href='index.php'><font color='red'>Faça Login para ter acesso total</font></a>";
@@ -166,12 +167,9 @@ and open the template in the editor.
 
                             <li><a href="shows.html">Shows e PPV's</a>
 
-                            <li><a href="#">Shows TNA</a>
-                                <ul>
-                                    <li><a href="#">IMPACT WRESTLING</a></li>
-                                    <li><a href="#">PPV'S</a></li>
+                            
 
-                                </ul>
+                               
 
                             <li><a href="contato.html">Contato</a></li> 
                             <li><a href="artigos.html">Loja MWB</a></li> 
@@ -221,12 +219,13 @@ and open the template in the editor.
                         <!-- area de login de usuario -->
 
                         <form method="POST" action="login.php">
+                            <h1>Logar-se</h1>
                             <label>Login:</label><input type="text" name="login" id="login"><br>
                             <br>
                             <label>Senha:</label><input type="password" name="senha" id="senha"><br>
                             <input type="submit" value="entrar" id="entrar" name="entrar">
                             <br>
-                            <a href="cadastro.html">Cadastre-se</a>
+                            
                         </form>
 
 
@@ -238,6 +237,8 @@ and open the template in the editor.
 
 
                         <form method="POST" action="cadastro.php">
+                            
+                            <h1>Cadastre-se</h1>
                             <label>Login:</label><input type="text" name="login" id="login"><br>
                             <br>
                             <label>Senha:</label><input type="password" name="senha" id="senha">

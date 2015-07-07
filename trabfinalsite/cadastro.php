@@ -8,7 +8,7 @@
         <?php
         $login = $_POST['login'];
         $senha = MD5($_POST['senha']);
-        $connect = mysql_connect('127.0.0.1', 'root', 'root');
+        $connect = mysql_connect('127.0.0.1', 'root');
         $db = mysql_select_db('cadastro');
         $query_select = "SELECT login FROM usuarios WHERE login = '$login'";
         $select = mysql_query($query_select, $connect);
@@ -25,14 +25,14 @@
             } else {
                 $query = "INSERT INTO usuarios (login,senha) VALUES ('$login','$senha')";
                 $insert = mysql_query($query, $connect);
-
-                if ($insert) {
+            }
+                 if ($insert) {
                     echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='index.php'</script>";
                 } else {
                     echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');window.location.href='index.php'</script>";
                 }
             }
-        }
+        
 
 
         
