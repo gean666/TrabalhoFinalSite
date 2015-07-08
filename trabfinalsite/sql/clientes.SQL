@@ -1,17 +1,5 @@
-CREATE DATABASE `cadastro`
-    CHARACTER SET 'utf8'
-    COLLATE 'utf8_general_ci';
-
-
-
-CREATE TABLE `usuarios` (
-  `id`       INTEGER(11)  NOT NULL AUTO_INCREMENT,
-  `email`    VARCHAR(100) NOT NULL UNIQUE,
-  `senha` VARCHAR(40)  NOT NULL,
-  `login`  varchar(40),
-  PRIMARY KEY (`id`)
-   
-)
-  
-
-
+Create table usuarios (
+ID Int UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT,
+login Varchar(30),
+senha Varchar(40),
+Primary Key (ID)) ENGINE =  MyISAM;
