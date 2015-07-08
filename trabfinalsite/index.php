@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -15,14 +16,12 @@ and open the template in the editor.
         
         
         <?php
-        $login_cookie = $_COOKIE['login'];
+        
         if (isset($login_cookie)) {
-            echo"Bem-Vindo, $login_cookie <br>";
-            
+            echo"Bem-Vindo, $login_cookie <br>";            
         } 
         else {
             echo"<center><font color='red'>Bem-Vindo, convidado</font><center><br>";
-            
             echo"<br><a href='index.php'><font color='red'>Faça Login para ter acesso total</font></a>";
         }
         ?>
