@@ -282,7 +282,7 @@ and open the template in the editor.
 
 
                         <h1 class="mensagem">Site em construção</h1>
-                        <div align="center"><img src="D:\TrabalhoFinalSite\trabfinalsite\img\bemvindo.jpg"></div> 
+                        <div align="center"><img src="img/bemvindo.jpg"></div> 
 
 
 
