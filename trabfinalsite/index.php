@@ -15,12 +15,12 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
+
+
         <?php
-        
         if (isset($login_cookie)) {
-            echo"Bem-Vindo, $login_cookie <br>";            
-        } 
-        else {
+            echo"Bem-Vindo, $login_cookie <br>";
+        } else {
             echo"<center><font color='red'>Bem-Vindo, convidado</font><center><br>";
             echo"<br><a href='index.php'><font color='red'>Faça Login para ter acesso total</font></a>";
         }
@@ -34,7 +34,7 @@ and open the template in the editor.
 
     <body>
 
-        
+
 
 
 
@@ -166,13 +166,13 @@ and open the template in the editor.
 
                             <li><a href="shows.html">Shows e PPV's WWE</a>
 
-                            
 
-                               
+
+
 
                             <li><a href="contato.html">Contato</a></li> 
                             <li><a href="artigos.html">Loja MWB</a></li> 
-                            
+
 
 
                         </ul>
@@ -224,7 +224,7 @@ and open the template in the editor.
                             <label>Senha:</label><input type="password" name="senha" id="senha"><br>
                             <input type="submit" value="entrar" id="entrar" name="entrar">
                             <br>
-                            
+
                         </form>
 
 
@@ -236,7 +236,7 @@ and open the template in the editor.
 
 
                         <form method="POST" action="cadastro.php">
-                            
+
                             <h1>Cadastre-se</h1>
                             <label>Login:</label><input type="text" name="login" id="login"><br>
                             <br>
@@ -261,6 +261,11 @@ and open the template in the editor.
                             <li><a class="fd" href="URL_Feedberner" target="_blank"></a></li>
                         </div>
 
+                        <br>
+                        <br>
+
+                       
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.4248840590735!2d-51.22640697355942!3d-30.033690548064254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197904290a05e9%3A0x4399d3efd78d1ef9!2zQ29sw6lnaW8gU8OpdmlnbsOp!5e0!3m2!1spt-BR!2sbr!4v1436484218604" width="300" height="300" frameborder="5" style="border:3" allowfullscreen></iframe>
 
 
 
