@@ -13,14 +13,12 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="estilo.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
+
+
         <?php
-        
         if (isset($login_cookie)) {
-            echo"Bem-Vindo, $login_cookie <br>";            
-        } 
-        else {
+            echo"Bem-Vindo, $login_cookie <br>";
+        } else {
             echo"<center><font color='red'>Bem-Vindo, convidado</font><center><br>";
             echo"<br><a href='index.php'><font color='red'>Faça Login para ter acesso total</font></a>";
         }
@@ -34,7 +32,7 @@ and open the template in the editor.
 
     <body>
 
-        
+
 
 
 
@@ -147,6 +145,9 @@ and open the template in the editor.
 
 
 
+
+
+
                 <!-- menu drop down abaixo dos slides -->
 
                 <div class="content">
@@ -166,13 +167,13 @@ and open the template in the editor.
 
                             <li><a href="shows.html">Shows e PPV's WWE</a>
 
-                            
 
-                               
+
+
 
                             <li><a href="contato.html">Contato</a></li> 
                             <li><a href="artigos.html">Loja MWB</a></li> 
-                            
+
 
 
                         </ul>
@@ -224,7 +225,7 @@ and open the template in the editor.
                             <label>Senha:</label><input type="password" name="senha" id="senha"><br>
                             <input type="submit" value="entrar" id="entrar" name="entrar">
                             <br>
-                            
+
                         </form>
 
 
@@ -236,7 +237,7 @@ and open the template in the editor.
 
 
                         <form method="POST" action="cadastro.php">
-                            
+
                             <h1>Cadastre-se</h1>
                             <label>Login:</label><input type="text" name="login" id="login"><br>
                             <br>
@@ -244,6 +245,13 @@ and open the template in the editor.
                             <br>
                             <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
                         </form>
+
+
+
+
+
+
+
 
 
 
@@ -267,7 +275,10 @@ and open the template in the editor.
 
 
 
+                        <div class="propaganda">
+                            <img width="400" height="400" src="img/summerslam.jpg"/>
 
+                        </div>
 
 
 
@@ -275,6 +286,9 @@ and open the template in the editor.
 
 
                     </div>
+
+
+
 
                     <!-- folha central da pagina -->
 
