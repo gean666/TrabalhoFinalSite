@@ -12,8 +12,10 @@ and open the template in the editor.
 
             //gadget metro com redes sociais
 
-
-            .MBD2B-social{width:285px}
+z
+            .MBD2B-social{width:285px
+            }
+            
             .MBD2B-social li{position:relative;cursor:pointer;padding:0;list-style:none}
             .MBD2B-social .fb,.tw,.gp,.fd{z-index:7;float:left;margin:1px;position:relative;display:block}
             .MBD2B-social .fb{background:url(http://3.bp.blogspot.com/-5uDzuzPa4ao/UqOnGZYpiKI/AAAAAAAAAEo/8CyoMUABc3U/s1600/Facebook1.png) no-repeat center center #1f69b3;width:140px;height:141px}
@@ -275,6 +277,7 @@ and open the template in the editor.
                 background-color: black;
                 color: aliceblue;
                 text-align: center;
+                z-index: 10;
             }
             body {
                 padding: 0px;
