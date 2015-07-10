@@ -278,7 +278,6 @@ and open the template in the editor.
                         <br>
 
                        
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.4248840590735!2d-51.22640697355942!3d-30.033690548064254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197904290a05e9%3A0x4399d3efd78d1ef9!2zQ29sw6lnaW8gU8OpdmlnbsOp!5e0!3m2!1spt-BR!2sbr!4v1436484218604" width="300" height="300" frameborder="5" style="border:3" allowfullscreen></iframe>
 
 
 
