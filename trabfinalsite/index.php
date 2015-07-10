@@ -284,8 +284,13 @@ and open the template in the editor.
 
 
 
-                        <div class="propaganda">
+                        <div>
                             <img width="400" height="400" src="img/summerslam.jpg"/>
+
+                        </div>
+                        
+                        <div>
+                            <img width="400" height="400" src="img/wwe_battleground_2015_custom_poster_by_angelmj06-d8w0bgm.png"/>
 
                         </div>
 
