@@ -17,7 +17,7 @@ and open the template in the editor.
 =======
         
         
->>>>>>> Acesse já o site e fique por dentro do mundo do wrestling
+>>>>>>> fdggfgfgfggfgfgrrtrtrtrtrtgfgf
 
 
         <?php
@@ -171,12 +171,7 @@ and open the template in the editor.
                             </li>
 
                             <li><a href="shows.html">Shows e PPV's WWE</a>
-                                 <li><a href="#">Shows TNA</a>
-                                <ul>
-                                    <li><a href="#">IMPACT WRESTLING</a></li>
-                                    <li><a href="#">PPV'S</a></li>
-
-                                </ul>
+                                 <li><a href="#">Shows e PPV'S TNA Impact</a>
                                  
 
 
