@@ -17,7 +17,7 @@ and open the template in the editor.
 =======
         
         
->>>>>>> fdggfgfgfggfgfgrrtrtrtrtrtgfgf
+>>>>>>> f9e6cdbc248063169d4f0ab29e98f4f949d112a2
 
 
         <?php
@@ -171,7 +171,7 @@ and open the template in the editor.
                             </li>
 
                             <li><a href="shows.html">Shows e PPV's WWE</a>
-                                 <li><a href="#">Shows e PPV'S TNA Impact</a>
+                                
                                  
 
 
@@ -295,6 +295,13 @@ and open the template in the editor.
                             <img width="400" height="400" src="img/wwe_battleground_2015_custom_poster_by_angelmj06-d8w0bgm.png"/>
 
                         </div>
+                        
+                        <div>
+                            <img width="400" height="400" src="img/wwemerchan.jpg"/>
+
+                        </div>
+                        
+                        
 
 
 
