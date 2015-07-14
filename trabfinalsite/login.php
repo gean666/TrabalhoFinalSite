@@ -1,19 +1,20 @@
 <?php
-
-$login = $_POST['login'];
-$entrar = $_POST['entrar'];
-$senha = md5($_POST['senha']);
-$connect = mysql_connect('127.0.0.1','root','');
-$db = mysql_select_db('cadastro');
-if (isset($entrar)) {
-
-    $verifica = mysql_query("SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'") or die("erro ao selecionar");
+session_start();
+include('inc/common.php');
+$con = newDbConnection();
+$sql = $con->prepare('SELECT id, name, email, password FROM user WHERE email LIKE ?');
+$email = $_POST['email'];
+$password = sha1($_POST['password']);
+$sql->bind_param('s', $email);
+$sql->execute();
+$users = $sql->get_result()->fetch_all(MYSQLI_ASSOC);
+if (count($users)) {
+    if ($users[0]['password'] == $password) {
+        $_SESSION['user'] = [
+            'id' => $users[0]['id'],
+            'name' => $users[0]['name'],
+            'email' => $users[0]['email'],
+        ];
+    }
 }
-if (mysql_num_rows($verifica) <= 0) {
-    echo"<script language='javascript' type='text/javascript'>alert('Login e/ou senha incorretos');window.location.href='login.html';</script>";
-    die();
-} else {
-    setcookie("login", $login);
-    header("Location:index.php");
-}
-?>
+header('location:index.php?p=user-welcome');

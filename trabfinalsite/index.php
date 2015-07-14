@@ -1,10 +1,14 @@
-
+<?php
+require 'inc/common.php';
+session_start();
+//dd($_SESSION);
+?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
+<script type="text/javascript">
+  alert("<<<Bem Vindo ao Master Wrestling Brazil>>>");
+  </script>
+
 <html>
     <head>
         <title>Master Wrestling Brazil</title>
@@ -13,21 +17,32 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="estilo.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-=======
-        
-        
->>>>>>> f9e6cdbc248063169d4f0ab29e98f4f949d112a2
+        <meta charset="utf-8">
+        <title>Camisetaria Fashion</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Hege Refsnes">
+        <link rel="icon" href="icon/ico1.jpg">
+        <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+
+        <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/socialstream.jquery.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <<<<<<< HEAD
+        =======
 
 
-        <?php
-        if (isset($login_cookie)) {
-            echo"Bem-Vindo, $login_cookie <br>";
-        } else {
-            echo"<center><font color='red'>Bem-Vindo, convidado</font><center><br>";
-            echo"<br><a href='index.php'><font color='red'>Faça Login para ter acesso total</font></a>";
-        }
-        ?>
+        >>>>>>> f9e6cdbc248063169d4f0ab29e98f4f949d112a2
+
+
+
     </head>
 
 
@@ -37,7 +52,7 @@ and open the template in the editor.
 
     <body>
 
-
+       
 
 
 
@@ -160,7 +175,7 @@ and open the template in the editor.
                     <nav>
                         <ul class="menu">
                             <li><a href="index.php">Inicio</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="sobre.php">Sobre</a></li>
                             <li><a href="#">Noticias</a>
                                 <ul>
                                     <li><a href="nwwe.html">WWE</a></li>
@@ -171,15 +186,15 @@ and open the template in the editor.
                             </li>
 
                             <li><a href="shows.html">Shows e PPV's WWE</a>
-                                
-                                 
 
 
 
 
 
-                            <li><a href="contato.html">Contato</a></li> 
-                            <li><a href="artigos.html">Loja MWB</a></li> 
+
+
+                            <li><a href="contato.php">Contato</a></li> 
+                            <li><a href="artigos.php">Loja MWB</a></li> 
 
 
 
@@ -225,33 +240,8 @@ and open the template in the editor.
 
                         <!-- area de login de usuario -->
 
-                        <form method="POST" action="login.php">
-                            <h1>Logar-se</h1>
-                            <label>Login:</label><input type="text" name="login" id="login"><br>
-                            <br>
-                            <label>Senha:</label><input type="password" name="senha" id="senha"><br>
-                            <input type="submit" value="entrar" id="entrar" name="entrar">
-                            <br>
-
-                        </form>
-
-
-
-                        <br>
-
-                        <!-- area de cadastro de usuario-->
-
-
-
-                        <form method="POST" action="cadastro.php">
-
-                            <h1>Cadastre-se</h1>
-                            <label>Login:</label><input type="text" name="login" id="login"><br>
-                            <br>
-                            <label>Senha:</label><input type="password" name="senha" id="senha">
-                            <br>
-                            <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
-                        </form>
+                        <?php include('./header.php'); ?>
+                        <li><a href="_user-form.php">cadastrar</a></li>
 
 
 
@@ -279,7 +269,7 @@ and open the template in the editor.
                         <br>
                         <br>
 
-                       
+
 
 
 
@@ -290,23 +280,28 @@ and open the template in the editor.
                             <img width="400" height="400" src="img/summerslam.jpg"/>
 
                         </div>
-                        
+
                         <div>
                             <img width="400" height="400" src="img/wwe_battleground_2015_custom_poster_by_angelmj06-d8w0bgm.png"/>
 
                         </div>
-                        
+
                         <div>
                             <img width="400" height="400" src="img/wwemerchan.jpg"/>
 
                         </div>
-                        
+
                         <div>
                             <img width="400" height="400" src="img/legends.jpg"/>
 
                         </div>
                         
-                        
+                        <div>
+                            <img width="400" height="400" src="img/wwegif.gif"/>
+
+                        </div>
+
+
 
 
 
