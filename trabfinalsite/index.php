@@ -301,6 +301,11 @@ and open the template in the editor.
 
                         </div>
                         
+                        <div>
+                            <img width="400" height="400" src="img/legends.jpg"/>
+
+                        </div>
+                        
                         
 
 
