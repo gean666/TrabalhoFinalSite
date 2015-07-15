@@ -14,8 +14,11 @@ session_start();
     <body>
 
         <div class="mask">
-            <div class="header">
-                Master Wrestling Brazil
+            <div  class="header">
+                <a  href='index.php' >Master Wrestling Brazil</a>
+
+
+
             </div>
 
             <div class="divisao">
@@ -127,7 +130,7 @@ session_start();
                                 </ul>
                             </li>
 
-                            <li><a href="shows.html">Shows e PPV'S WWE</a>
+                            
 
 
 
@@ -231,6 +234,8 @@ session_start();
 
 
                     <div class="col2">
+                        
+                        <center><img  src="img/AtitudeEra.jpg"></center>
                         <h2>O Master Wrestling Brazil é um projeto que nasceu em junho de 2015, e que desde cedo sempre teve uma forte presença na Comunidade de Wrestling Online no Brasil, e no mundo. Começou como um blog mas rapidamente passou a ser um site. Sempre conhecido pelas atualizações constantes e pelos bons espaços e artigos. Esperamos centenas e milhares de visitas diárias. O MWB está ainda presente no Facebook, Twitter e Google+, entre outras redes sociais.</h2>
 
                     </div>

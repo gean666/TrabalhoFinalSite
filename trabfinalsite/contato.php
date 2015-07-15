@@ -16,8 +16,11 @@ session_start();
     <body>
 
         <div class="mask">
-            <div class="header">
-                Master Wrestling Brazil
+            <div  class="header">
+                <a  href='index.php' >Master Wrestling Brazil</a>
+
+
+
             </div>
 
             <div class="divisao">
@@ -129,7 +132,7 @@ session_start();
                                 </ul>
                             </li>
 
-                            <li><a href="shows.html">Shows e PPV'S WWE</a>
+                            
 
 
 

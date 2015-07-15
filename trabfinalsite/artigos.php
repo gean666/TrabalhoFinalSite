@@ -31,8 +31,11 @@ session_start();
         <!-- cabecalho com titulo da pagina -->
 
         <div class="mask">
-            <div class="header">
-                Master Wrestling Brazil
+            <div  class="header">
+                <a  href='index.php' >Master Wrestling Brazil</a>
+
+
+
             </div>
 
             <div class="divisao">
@@ -146,7 +149,7 @@ session_start();
                                 </ul>
                             </li>
 
-                            <li><a href="shows.html">Shows e PPV'S WWE</a>
+                            
 
 
 
@@ -190,10 +193,10 @@ session_start();
                             <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/99x61-carrinho-assina.gif" name="submit" alt="Visualizar carrinho de compras" />
                         </form>
 
+
+
                         <?php include('./header.php'); ?>
                         <li><a href="_user-form.php">cadastrar</a></li>
-
-
 
 
 
@@ -210,9 +213,18 @@ session_start();
                         </div>
 
 
+                        <?php include('./header.php'); ?>
+                        <li><a href="_user-form.php">cadastrar</a></li>
 
 
 
+
+
+
+                        <div>
+                            <img width="400" height="400" src="img/wwe2k.png"/>
+
+                        </div>
 
                         <div>
                             <img width="400" height="400" src="img/summerslam.jpg"/>
@@ -233,11 +245,6 @@ session_start();
                             <img width="400" height="400" src="img/legends.jpg"/>
 
                         </div>
-                        
-                         <div>
-                             <img width="400" height="400" src="img/wwegif2.gif"/>
-
-                        </div>
 
 
 
@@ -254,13 +261,13 @@ session_start();
 
                         <!-- itens e produtos tabelas e codigos do carrinho -->
 
-                        <center><h1>ITENS DISPONIVEIS!!</h1></center>
+                        <center><h1>!!ITENS DISPONIVEIS!!</h1></center>
 
 
 
 
 
-                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="http://3.bp.blogspot.com/-09ZnzYX6xHg/TgetFgkhUwI/AAAAAAAACxE/zFHaaONXHQI/s1600/cm-punk-camisa+-+copia.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa CM PUNK</td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$90,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">SES</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
+                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="http://3.bp.blogspot.com/-09ZnzYX6xHg/TgetFgkhUwI/AAAAAAAACxE/zFHaaONXHQI/s1600/cm-punk-camisa+-+copia.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa CM PUNK</td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$80,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">Edição SES</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
                                         <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                                         <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
                                             <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -272,7 +279,7 @@ session_start();
                                 </tr> 
                             </tbody> 
                         </table>
-                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="img/thebeast.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa Brock Lesnar</td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$90,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">Edição Beast Incarnate</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
+                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="img/thebeast.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa Brock Lesnar</td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$70,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">Edição Beast Incarnate 2015</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
                                         <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                                         <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
                                             <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -285,7 +292,7 @@ session_start();
                             </tbody> 
                         </table>
 
-                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="img/brogue.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa Sheamus </td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$90,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">Edição The Great White</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
+                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="img/brogue.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa Sheamus </td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt Tamanho G</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$90,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">Edição The Great White</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
                                         <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                                         <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
                                             <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -299,7 +306,7 @@ session_start();
                         </table>
 
 
-                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="img/rko.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa Randy Orton</td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt Tamanho G</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$90,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">RKO</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
+                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="img/rko.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa Randy Orton</td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt Tamanho G</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$80,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">Edição RKO 2014</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
                                         <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                                         <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
                                             <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -312,7 +319,7 @@ session_start();
                             </tbody> 
                         </table>
 
-                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="img/cena.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa John Cena</td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt Tamaho M</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$90,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">U cant se me</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
+                        <table border="1" cellpadding="10" style="width: 670px;"> <tbody> <tr> <th class="item_thumb" rowspan="6" width="290"><img src="img/cena.jpg" width="290" /> </th> <th width="120">Item </th> <td class="item_name">Camisa John Cena</td> </tr> <tr> <th width="120">Tipo</th> <td>T-Shirt Tamaho M</td></tr> <tr> <th width="120">Preço</th> <td class="item_price">R$90,00</td> </tr> <tr> <th width="120">Descrição</th> <td class="item_Description">U'Cant See Me</td> </tr> <tr> <th width="120">Informações complementares</th> <td>Detalhes </td> </tr> <tr> <td colspan="2"><a class="item_add" href="javascript:;">Comprar</a> 
                                         <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                                         <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post">
                                             <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->

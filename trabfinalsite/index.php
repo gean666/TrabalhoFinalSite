@@ -6,8 +6,8 @@ session_start();
 <!DOCTYPE html>
 
 <script type="text/javascript">
-  alert("<<<Bem Vindo ao Master Wrestling Brazil>>>");
-  </script>
+    alert("<<<Bem Vindo ao Master Wrestling Brazil>>>");
+</script>
 
 <html>
     <head>
@@ -52,7 +52,7 @@ session_start();
 
     <body>
 
-       
+
 
 
 
@@ -65,7 +65,7 @@ session_start();
 
         <div class="mask">
             <div  class="header">
-                <a  href='#' >Master Wrestling Brazil</a>
+                <a  href='index.php' >Master Wrestling Brazil</a>
 
 
 
@@ -185,7 +185,7 @@ session_start();
                                 </ul>
                             </li>
 
-                            <li><a href="shows.html">Shows e PPV's WWE</a>
+                            
 
 
 
@@ -273,7 +273,10 @@ session_start();
 
 
 
+                        <div>
+                            <img width="400" height="400" src="img/wweraw.gif"/>
 
+                        </div>
 
 
                         <div>
@@ -295,11 +298,8 @@ session_start();
                             <img width="400" height="400" src="img/legends.jpg"/>
 
                         </div>
-                        
-                        <div>
-                            <img width="400" height="400" src="img/wwegif.gif"/>
 
-                        </div>
+                        
 
 
 
@@ -318,8 +318,21 @@ session_start();
                     <div class="col2">
 
 
-                        <h1 class="mensagem">Site em construção</h1>
-                        <div align="center"><img src="img/bemvindo.jpg"></div> 
+                        <h1 class="mensagem">Match Card Battleground</h1>
+
+
+                        <center><img src="img/batle1.jpg"></center>
+                        <center><img src="img/batle2.jpg"></center>
+                        <center><img src="img/batle3.jpg"></center>
+                        <center><img src="img/batle4.jpg"></center>
+
+
+
+
+
+
+
+
 
 
 
@@ -347,7 +360,7 @@ session_start();
                 <!-- rodape da pagina -->
 
                 <div class="footer">
-                    Todos os direitos reservados aos Programadores Gean Michel e José Guilherme
+                    Todos os direitos reservados aos Programadores 
                 </div>
             </div>
 
